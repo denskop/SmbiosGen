@@ -26,6 +26,7 @@
 		9B23C9551F3F84CE00CFC9B8 /* SmBios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SmBios.h; path = SmBiosGen/IndustryStandard/SmBios.h; sourceTree = "<group>"; };
 		9B23C9561F3F84E500CFC9B8 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = main.c; path = SmBiosGen/main.c; sourceTree = SOURCE_ROOT; };
 		9B23C9581F3F853900CFC9B8 /* types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = types.h; path = SmBiosGen/types.h; sourceTree = SOURCE_ROOT; };
+		9B23C9591F3F9FFB00CFC9B8 /* AppleSmBios.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppleSmBios.h; path = SmBiosGen/IndustryStandard/AppleSmBios.h; sourceTree = "<group>"; };
 		9B340DED1F3F5B09007519EE /* SmBiosGen */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SmBiosGen; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -44,6 +45,7 @@
 			isa = PBXGroup;
 			children = (
 				9B23C9551F3F84CE00CFC9B8 /* SmBios.h */,
+				9B23C9591F3F9FFB00CFC9B8 /* AppleSmBios.h */,
 			);
 			name = IndustryStandard;
 			sourceTree = "<group>";
