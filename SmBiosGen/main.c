@@ -7,7 +7,9 @@
 //
 
 #include <stdio.h>
+#include <stdlib.h>
 #include "IndustryStandard/AppleSmBios.h"
+#include "StrList.h"
 
 int main(int argc, const char * argv[]) {
 }

@@ -1,5 +1,5 @@
 //
-//  types.h
+//  Types.h
 //  SmBiosGen
 //
 //  Created by Mr.Dee on 12.08.17.
@@ -10,10 +10,12 @@
 #define __TYPES_H__
 
 // Basic types
-typedef unsigned char UINT8;
-typedef unsigned short UINT16;
-typedef unsigned int UINT32;
-typedef unsigned long int UINT64;
+typedef char            CHAR8;
+typedef unsigned char   UCHAR8;
+typedef unsigned char   UINT8;
+typedef unsigned short  UINT16;
+typedef unsigned int    UINT32;
+typedef unsigned long   UINT64;
 
 // UEFI types
 

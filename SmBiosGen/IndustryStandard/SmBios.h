@@ -13,7 +13,7 @@ WITHOUT WARRANTIES OR REPRESENTATIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED.
 
 **/
 
-#include "../types.h" // Added by denskop, 2017
+#include "../Types.h" // Added by denskop, 2017
 
 #ifndef __SMBIOS_STANDARD_H__
 #define __SMBIOS_STANDARD_H__
