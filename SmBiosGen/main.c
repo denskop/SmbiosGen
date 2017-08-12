@@ -1,6 +1,6 @@
 //
 //  main.c
-//  smbios-gen
+//  SmBiosGen
 //
 //  Created by Mr.Dee on 12.08.17.
 //  Copyright © 2017 denskop. All rights reserved.
