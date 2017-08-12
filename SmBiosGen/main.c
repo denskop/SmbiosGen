@@ -7,7 +7,7 @@
 //
 
 #include <stdio.h>
-#include "specification/types.h"
+#include "IndustryStandard/SmBios.h"
 
 int main(int argc, const char * argv[]) {
 }

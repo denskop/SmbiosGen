@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9B340DF11F3F5B09007519EE /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 9B340DF01F3F5B09007519EE /* main.c */; };
+		9B23C9571F3F84E500CFC9B8 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 9B23C9561F3F84E500CFC9B8 /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,9 +23,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9B340DED1F3F5B09007519EE /* smbios-gen */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "smbios-gen"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B340DF01F3F5B09007519EE /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		9B340DF81F3F5BE7007519EE /* specification */ = {isa = PBXFileReference; lastKnownFileType = folder; path = specification; sourceTree = "<group>"; };
+		9B23C9551F3F84CE00CFC9B8 /* SmBios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SmBios.h; path = SmBiosGen/IndustryStandard/SmBios.h; sourceTree = "<group>"; };
+		9B23C9561F3F84E500CFC9B8 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = main.c; path = SmBiosGen/main.c; sourceTree = SOURCE_ROOT; };
+		9B23C9581F3F853900CFC9B8 /* types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = types.h; path = SmBiosGen/types.h; sourceTree = SOURCE_ROOT; };
+		9B340DED1F3F5B09007519EE /* SmBiosGen */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SmBiosGen; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,10 +40,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B23C9541F3F839600CFC9B8 /* IndustryStandard */ = {
+			isa = PBXGroup;
+			children = (
+				9B23C9551F3F84CE00CFC9B8 /* SmBios.h */,
+			);
+			name = IndustryStandard;
+			sourceTree = "<group>";
+		};
 		9B340DE41F3F5B09007519EE = {
 			isa = PBXGroup;
 			children = (
-				9B340DEF1F3F5B09007519EE /* smbios-gen */,
+				9B23C9541F3F839600CFC9B8 /* IndustryStandard */,
+				9B340DEF1F3F5B09007519EE /* SmBiosGen */,
 				9B340DEE1F3F5B09007519EE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,26 +60,27 @@
 		9B340DEE1F3F5B09007519EE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9B340DED1F3F5B09007519EE /* smbios-gen */,
+				9B340DED1F3F5B09007519EE /* SmBiosGen */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9B340DEF1F3F5B09007519EE /* smbios-gen */ = {
+		9B340DEF1F3F5B09007519EE /* SmBiosGen */ = {
 			isa = PBXGroup;
 			children = (
-				9B340DF81F3F5BE7007519EE /* specification */,
-				9B340DF01F3F5B09007519EE /* main.c */,
+				9B23C9561F3F84E500CFC9B8 /* main.c */,
+				9B23C9581F3F853900CFC9B8 /* types.h */,
 			);
+			name = SmBiosGen;
 			path = "smbios-gen";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9B340DEC1F3F5B09007519EE /* smbios-gen */ = {
+		9B340DEC1F3F5B09007519EE /* SmBiosGen */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9B340DF41F3F5B09007519EE /* Build configuration list for PBXNativeTarget "smbios-gen" */;
+			buildConfigurationList = 9B340DF41F3F5B09007519EE /* Build configuration list for PBXNativeTarget "SmBiosGen" */;
 			buildPhases = (
 				9B340DE91F3F5B09007519EE /* Sources */,
 				9B340DEA1F3F5B09007519EE /* Frameworks */,
@@ -79,9 +90,9 @@
 			);
 			dependencies = (
 			);
-			name = "smbios-gen";
+			name = SmBiosGen;
 			productName = "smbios-gen";
-			productReference = 9B340DED1F3F5B09007519EE /* smbios-gen */;
+			productReference = 9B340DED1F3F5B09007519EE /* SmBiosGen */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +110,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9B340DE81F3F5B09007519EE /* Build configuration list for PBXProject "smbios-gen" */;
+			buildConfigurationList = 9B340DE81F3F5B09007519EE /* Build configuration list for PBXProject "SmBiosGen" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -111,7 +122,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9B340DEC1F3F5B09007519EE /* smbios-gen */,
+				9B340DEC1F3F5B09007519EE /* SmBiosGen */,
 			);
 		};
 /* End PBXProject section */
@@ -121,7 +132,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B340DF11F3F5B09007519EE /* main.c in Sources */,
+				9B23C9571F3F84E500CFC9B8 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,7 +245,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9B340DE81F3F5B09007519EE /* Build configuration list for PBXProject "smbios-gen" */ = {
+		9B340DE81F3F5B09007519EE /* Build configuration list for PBXProject "SmBiosGen" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9B340DF21F3F5B09007519EE /* Debug */,
@@ -243,13 +254,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9B340DF41F3F5B09007519EE /* Build configuration list for PBXNativeTarget "smbios-gen" */ = {
+		9B340DF41F3F5B09007519EE /* Build configuration list for PBXNativeTarget "SmBiosGen" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9B340DF51F3F5B09007519EE /* Debug */,
 				9B340DF61F3F5B09007519EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

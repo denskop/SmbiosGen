@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:smbios-gen.xcodeproj">
+      location = "self:/Users/mr.dee/SmbiosGen/SmBiosGen.xcodeproj">
    </FileRef>
 </Workspace>
